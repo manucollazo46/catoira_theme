@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Quick';
+    src: url("quick_3/Quick.ttf") format("truetype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Jersey';
+    src: url("jersey/JerseyM54.ttf") format("truetype");
+    font-display: fallback;
+}

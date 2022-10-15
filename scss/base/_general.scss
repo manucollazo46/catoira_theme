@@ -1,0 +1,16 @@
+body{
+    font-family: $quick;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark{
+    background-color: $color-primary !important;
+    font-family: $quick;
+    font-size: 20px;
+    a{
+        color: $color-crema;
+    }
+}
+
+.region-nav-additional{
+    display: none;
+}

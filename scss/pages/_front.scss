@@ -1,0 +1,30 @@
+div.container-fluid.breadcrumbs{
+    --bs-gutter-x: 0rem;
+    .field--name-field-imagen-banner{
+        position: relative;
+        img{
+            object-fit: cover;
+            width: 150%;
+            height: 750px;
+            filter: brightness(0.6);
+        }
+    }
+    .field--name-field-banner-titulo{
+        color: $color-crema;
+        position: absolute;
+        font-family: $jersey;
+        top: 35vh;
+        left: 20%;
+        font-size: $titulo-banner;
+    }
+    .field--name-field-banner-subtitulo-{
+        font-family: $jersey;
+        color: $color-crema;
+        position: absolute;
+        top: 52vh;
+        left: 20%;
+        font-size: $subtitulo-banner;
+    }
+    
+
+}

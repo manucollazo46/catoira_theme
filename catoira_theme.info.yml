@@ -1,0 +1,23 @@
+name: 'Astilleros Catoira Theme'
+type: theme
+description: 'Astilleros Catoira Theme subtheme based on Bootstrap 5 theme.'
+core_version_requirement: ^9.2
+'base theme': bootstrap5
+libraries:
+  - catoira_theme/global-styling
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/style.css
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

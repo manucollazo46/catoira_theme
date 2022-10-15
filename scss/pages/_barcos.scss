@@ -1,0 +1,40 @@
+div.general-barcos{
+    background-color: $color-background;
+    padding-top: $small-margin;
+    padding-bottom: $small-margin;
+    div.barcos{
+        border-radius: 5px;
+        width: 55%;
+        background-color: white;
+        padding-bottom: $medium-margin;
+        #block-catoira-theme-page-title{
+            margin-top: $medium-margin;
+            color: $color-primary;
+            span{
+                font-size: $titulo;
+            }
+        }
+
+        .field--name-field-subtitulo{
+            font-size: $subtitulo;
+            text-align: center;
+            margin-bottom: $small-margin;
+        }
+
+        .field--name-field-imagen-principal{
+            
+            margin-bottom: $small-margin;
+            img{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+
+        .field--name-body, .field--name-field-url{
+            padding-left: $medium-margin;
+            padding-right: $medium-margin;
+        }
+    }
+}
