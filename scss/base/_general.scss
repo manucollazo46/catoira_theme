@@ -1,5 +1,7 @@
 body{
     font-family: $quick;
+    background-color: $color-background2;
+    color: $color-secondary;
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark{
@@ -11,6 +13,14 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark{
     }
 }
 
+.view-frontpage {
+    display: none;
+}
+
 .region-nav-additional{
     display: none;
+}
+
+.bg-secondary{
+    background-color: $color-secondary !important;
 }

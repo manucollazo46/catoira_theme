@@ -1,15 +1,17 @@
 div.general-barcos{
-    background-color: $color-background;
+    background-color: $color-background2;
     padding-top: $small-margin;
     padding-bottom: $small-margin;
     div.barcos{
         border-radius: 5px;
         width: 55%;
-        background-color: white;
+        background-color: $color-background;
         padding-bottom: $medium-margin;
+        color: $color-secondary;
+
         #block-catoira-theme-page-title{
-            margin-top: $medium-margin;
             color: $color-primary;
+            margin-top: $medium-margin;
             span{
                 font-size: $titulo;
             }
