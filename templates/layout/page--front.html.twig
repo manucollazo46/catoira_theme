@@ -101,7 +101,8 @@ set footer_classes = ' ' ~
     {% if page.breadcrumb %}
       {{ page.breadcrumb }}
     {% endif %}
-    <div class="container">
+  </div>
+  <div class="container">
         <div class="row g-0">
         {% if page.sidebar_first %}
             <div class="order-2 order-lg-1 {{ sidebar_first_classes }}">
@@ -109,7 +110,9 @@ set footer_classes = ' ' ~
             </div>
         {% endif %}
         <div class="order-1 order-lg-2 {{ content_classes }}">
-            {{ page.content }}
+            <div class="container">
+              {{ page.content }}
+            </div>
         </div>
         {% if page.sidebar_second %}
             <div class="order-3 {{ sidebar_second_classes }}">
@@ -118,7 +121,6 @@ set footer_classes = ' ' ~
         {% endif %}
         </div>
     </div>
-  </div>
 
 </main>
 

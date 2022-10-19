@@ -1,0 +1,36 @@
+
+#block-serviciosqueofrecemos{
+    margin-top: $extra-big-margin;
+    margin-bottom: $extra-big-margin;
+    text-align: center;
+    h2{
+        margin-top: $small-margin;
+        font-size: $titulo;
+        font-weight: bold;
+    }
+    .servicios{
+        .row{
+            gap: $big-margin;
+            display: grid;
+        }
+        .col:hover{
+            img{
+                filter: grayscale(0);
+            }
+        }
+        .field--name-field-servicio1,
+        .field--name-field-servicio2,
+        .field--name-field-servicio3{
+            font-size: $subtitulo;
+            font-weight: bold;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            filter: grayscale(100%);
+            border-radius: 50%;
+        }
+        
+    }
+}

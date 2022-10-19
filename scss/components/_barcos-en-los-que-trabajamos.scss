@@ -1,4 +1,4 @@
-#block-views-block-noticias-actualidad-block-1{
+#block-views-block-barcos-barcos-en-los-que-trabajamos{
     margin-top: $big-margin;
     margin-bottom: $big-margin;
     h2{
@@ -13,7 +13,7 @@
         gap: $medium-margin;
         display: grid;
     }
-    .col-3{
+    .col{
         width: auto !important;
         min-height: 220px;
         max-height: auto;
@@ -25,7 +25,7 @@
         padding-bottom: $medium-margin;
         border-radius: 5px;
     }
-    .col-3:hover{
+    .col:hover{
         background-color: white;
     }
     .views-field-title{
