@@ -10172,6 +10172,9 @@ body {
   background-color: #afdbff;
   color: #3d5b74; }
 
+.region-content {
+  padding: 0 !important; }
+
 nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
   background-color: #4e82af !important;
   font-family: "Quick";
@@ -10314,13 +10317,14 @@ div.general-barcos {
   #block-views-block-barcos-barcos-en-los-que-trabajamos .row {
     grid-template-columns: auto auto auto auto;
     gap: 30px;
-    display: grid; }
+    display: grid;
+    margin: auto; }
   #block-views-block-barcos-barcos-en-los-que-trabajamos .col {
-    width: auto !important;
+    width: 300px !important;
     min-height: 220px;
     max-height: auto;
     background-color: #d1eaff;
-    /*padding: $small-margin;*/
+    padding: 15px;
     text-align: center;
     padding: 15px;
     padding-top: 30px;
@@ -10332,6 +10336,9 @@ div.general-barcos {
     margin-top: 15px;
     font-size: 25px;
     font-weight: bold; }
+    #block-views-block-barcos-barcos-en-los-que-trabajamos .views-field-title a {
+      text-decoration: none;
+      color: #3d5b74; }
   #block-views-block-barcos-barcos-en-los-que-trabajamos .views-field-body {
     margin: 15px;
     padding-top: 5px;
@@ -10339,5 +10346,88 @@ div.general-barcos {
     border-top-color: #3d5b74;
     border-top-style: solid;
     border-top-width: 1px; }
+
+#block-bloque4columnas {
+  background-color: #4e82af;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  #block-bloque4columnas .field--name-field-titulo-1,
+  #block-bloque4columnas .field--name-field-titulo-2,
+  #block-bloque4columnas .field--name-field-titulo-3,
+  #block-bloque4columnas .field--name-field-titulo-4 {
+    color: #ffefd5;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  #block-bloque4columnas .field--name-field-subtitulo-1,
+  #block-bloque4columnas .field--name-field-subtitulo-2,
+  #block-bloque4columnas .field--name-field-subtitulo-3,
+  #block-bloque4columnas .field--name-field-subtitulo-4 {
+    font-size: 25px;
+    color: #d1eaff; }
+  #block-bloque4columnas .row .col + .col {
+    border-left: 0.5px solid #d1eaff; }
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+#block-ubicacionastilleros {
+  text-align: end;
+  color: #ffefd5;
+  font-size: 25px;
+  margin-bottom: 60px; }
+  #block-ubicacionastilleros .field--name-field-mapa {
+    border-radius: 15px; }
+  #block-ubicacionastilleros .field--name-body {
+    padding-top: 60px; }
+
+footer {
+  text-align: center;
+  font-size: 25px; }
+  footer .post-footer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    display: grid; }
+
+.actualidad #block-catoira-theme-page-title {
+  margin-top: 60px;
+  margin-top: 60px;
+  font-size: 45px;
+  font-weight: bold; }
+.actualidad .row {
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  display: grid;
+  margin-bottom: 30px; }
+.actualidad .col {
+  width: auto !important;
+  min-height: 220px;
+  max-height: auto;
+  background-color: #d1eaff;
+  /*padding: $small-margin;*/
+  text-align: center;
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px; }
+.actualidad .col:hover {
+  background-color: white; }
+.actualidad .views-field-title {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold; }
+.actualidad .views-field-body {
+  margin: 15px;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top-color: #3d5b74;
+  border-top-style: solid;
+  border-top-width: 1px; }
 
 /*# sourceMappingURL=style.css.map */

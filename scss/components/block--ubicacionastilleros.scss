@@ -1,0 +1,19 @@
+footer{
+    padding-top: $big-margin;
+    padding-bottom: $big-margin;
+}
+
+#block-ubicacionastilleros{
+    .field--name-field-mapa{
+        border-radius: $small-margin;
+    }
+    text-align: end;
+    color: $color-crema;
+    font-size: $subtitulo;
+
+    .field--name-body{
+        padding-top: $big-margin;
+    }
+
+    margin-bottom: $big-margin;
+}

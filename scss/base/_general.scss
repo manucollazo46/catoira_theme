@@ -3,7 +3,9 @@ body{
     background-color: $color-background2;
     color: $color-secondary;
 }
-
+.region-content{
+    padding: 0 !important;
+}
 nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark{
     background-color: $color-primary !important;
     font-family: $quick;

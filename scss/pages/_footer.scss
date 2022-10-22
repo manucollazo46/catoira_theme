@@ -1,0 +1,11 @@
+footer{
+    text-align: center;
+    .post-footer{
+        margin-bottom: $medium-margin;
+        margin-top: $medium-margin;
+        grid-template-columns: auto auto auto;
+        gap: $medium-margin;
+        display: grid;
+    }
+    font-size: $subtitulo;
+}

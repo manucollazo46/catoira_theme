@@ -1,0 +1,30 @@
+#block-bloque4columnas{
+    background-color: $color-primary;
+    text-align: center;
+
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: $big-margin;
+    padding-bottom: $big-margin;
+
+    .field--name-field-titulo-1,
+    .field--name-field-titulo-2,
+    .field--name-field-titulo-3,
+    .field--name-field-titulo-4{
+        color: $color-crema;
+        font-size: $titulo2;
+        font-weight: bold;
+        margin-bottom: $small-margin;
+    }
+
+    .field--name-field-subtitulo-1,
+    .field--name-field-subtitulo-2,
+    .field--name-field-subtitulo-3,
+    .field--name-field-subtitulo-4{
+        font-size: $subtitulo;
+        color: $color-background;
+    }
+
+    .row .col + .col { border-left:0.5px solid $color-background; }
+
+}

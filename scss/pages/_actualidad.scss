@@ -1,26 +1,23 @@
-#block-views-block-barcos-barcos-en-los-que-trabajamos{
-    margin-top: $big-margin;
-    margin-bottom: $big-margin;
-    h2{
+.actualidad{
+    #block-catoira-theme-page-title{
+        margin-top: $big-margin;
+        margin-top: $big-margin;
         font-size: $titulo;
         font-weight: bold;
-        text-align: center;
-        margin-bottom: $small-margin;
     }
     .row{
-        
-        grid-template-columns: auto auto auto auto;
+            
+        grid-template-columns: auto auto auto;
         gap: $medium-margin;
         display: grid;
-        margin: auto;
-          
+        margin-bottom: $medium-margin;
     }
     .col{
-        width: 300px !important;
+        width: auto !important;
         min-height: 220px;
         max-height: auto;
         background-color: $color-background;
-        padding: $small-margin;
+        /*padding: $small-margin;*/
         text-align: center;
         padding: $small-margin;
         padding-top: $medium-margin;
@@ -34,10 +31,6 @@
         margin-top: $small-margin;
         font-size: $subtitulo;
         font-weight: bold;
-        a{
-            text-decoration: none;
-            color: $color-secondary;
-        }
     }
     .views-field-body{
         margin: $small-margin;
@@ -46,6 +39,5 @@
         border-top-color: $color-secondary;
         border-top-style: solid;
         border-top-width: 1px;
-    }
-   
+    }   
 }
