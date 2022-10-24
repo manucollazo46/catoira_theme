@@ -1,19 +1,21 @@
+#block-catoira-theme-page-title{
+    margin-top: $big-margin;
+    margin-top: $big-margin;
+    font-size: $titulo;
+    font-weight: bold;
+}
 .actualidad{
-    #block-catoira-theme-page-title{
-        margin-top: $big-margin;
-        margin-top: $big-margin;
-        font-size: $titulo;
-        font-weight: bold;
-    }
+    
     .row{
             
         grid-template-columns: auto auto auto;
         gap: $medium-margin;
-        display: grid;
+         display: grid;
         margin-bottom: $medium-margin;
     }
     .col{
-        width: auto !important;
+        width: 100% !important;
+        min-width: auto ;
         min-height: 220px;
         max-height: auto;
         background-color: $color-background;
@@ -40,4 +42,37 @@
         border-top-style: solid;
         border-top-width: 1px;
     }   
+}
+
+.pagina-barcos{
+    text-align: center;
+    --bs-gutter-x: 0;
+    margin: 0;
+    grid-template-columns: auto auto auto auto;
+    gap: $medium-margin;
+    display: grid;
+    margin: auto;
+    margin-bottom: $big-margin;
+    .col{
+        width: 300px !important;
+        min-height: 220px;
+        max-height: auto;
+        background-color: $color-background;
+        padding: $small-margin;
+        text-align: center;
+        padding: $small-margin;
+        padding-top: $medium-margin;
+        padding-bottom: $medium-margin;
+        border-radius: 5px;
+    }
+    .col:hover{
+        background-color: white;
+    }
+    a{
+        margin-top: $medium-margin;
+        font-size: $subtitulo;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-secondary;
+   }
 }

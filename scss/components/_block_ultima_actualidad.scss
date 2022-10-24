@@ -42,3 +42,26 @@
         border-top-width: 1px;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    #block-views-block-noticias-actualidad-block-1{
+        padding-left: $movil-medium-margin;
+        padding-right: $movil-medium-margin;
+        h2{
+            font-size: $movil-titulo;
+        }
+        .row{
+            grid-template-columns: auto auto;
+            gap: $movil-medium-margin;
+
+        }
+        .views-field-title{
+            font-size: $movil-titulo2;
+            font-weight: normal;
+        }
+        .views-field-body{
+            border-top-width: 0px;
+            display: none;
+        }
+    }
+}

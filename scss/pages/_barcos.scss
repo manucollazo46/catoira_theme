@@ -1,13 +1,16 @@
 div.general-barcos{
     background-color: $color-background2;
-    padding-top: $small-margin;
     padding-bottom: $small-margin;
+    
     div.barcos{
         border-radius: 5px;
         width: 55%;
         background-color: $color-background;
-        padding-bottom: $medium-margin;
         color: $color-secondary;
+        padding: $extra-big-margin;
+        padding-top: 0;
+        margin-top: $medium-margin;
+        margin-bottom: $medium-margin;
 
         #block-catoira-theme-page-title{
             color: $color-primary;
@@ -34,9 +37,38 @@ div.general-barcos{
             }
         }
 
-        .field--name-body, .field--name-field-url{
-            padding-left: $medium-margin;
-            padding-right: $medium-margin;
+        .field--name-field-imagenes-secundarias{
+            display: flex;
+            margin-top: $small-margin;
+            margin-bottom: $small-margin;
+            .field__item{
+                margin-right: $small-margin;
+            }
         }
+
+        .field--name-field-url{
+            text-align: center;
+            margin: $medium-margin;
+            a{
+                text-decoration: none;
+                color: $color-background;
+                background-color: $color-primary;
+                padding: $small-margin;
+            }
+        }
+
+        .field--name-field-fecha-del-evento{
+            text-align: end;
+        }
+
+        .node__meta{
+            display: none;
+        }
+
+        .field--name-field-tipo-de-barco,
+        .field--name-field-eslora{
+            text-align: end;
+        }
+
     }
 }

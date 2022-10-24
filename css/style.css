@@ -10228,6 +10228,21 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
     border-top-style: solid;
     border-top-width: 1px; }
 
+@media only screen and (max-width: 900px) {
+  #block-views-block-noticias-actualidad-block-1 {
+    padding-left: 15px;
+    padding-right: 15px; }
+    #block-views-block-noticias-actualidad-block-1 h2, #block-views-block-noticias-actualidad-block-1 .h2 {
+      font-size: 22px; }
+    #block-views-block-noticias-actualidad-block-1 .row {
+      grid-template-columns: auto auto;
+      gap: 15px; }
+    #block-views-block-noticias-actualidad-block-1 .views-field-title {
+      font-size: 17px;
+      font-weight: normal; }
+    #block-views-block-noticias-actualidad-block-1 .views-field-body {
+      border-top-width: 0px;
+      display: none; } }
 div.container-fluid.breadcrumbs, div.breadcrumbs.container-sm, div.breadcrumbs.container-md, div.breadcrumbs.container-lg, div.breadcrumbs.container-xl, div.breadcrumbs.container-xxl {
   --bs-gutter-x: 0rem; }
   div.container-fluid.breadcrumbs .field--name-field-imagen-banner, div.breadcrumbs.container-sm .field--name-field-imagen-banner, div.breadcrumbs.container-md .field--name-field-imagen-banner, div.breadcrumbs.container-lg .field--name-field-imagen-banner, div.breadcrumbs.container-xl .field--name-field-imagen-banner, div.breadcrumbs.container-xxl .field--name-field-imagen-banner {
@@ -10243,25 +10258,46 @@ div.container-fluid.breadcrumbs, div.breadcrumbs.container-sm, div.breadcrumbs.c
     font-family: "Jersey";
     top: 35vh;
     left: 20%;
-    font-size: 120px; }
+    font-size: 90px;
+    font-weight: bold; }
   div.container-fluid.breadcrumbs .field--name-field-banner-subtitulo-, div.breadcrumbs.container-sm .field--name-field-banner-subtitulo-, div.breadcrumbs.container-md .field--name-field-banner-subtitulo-, div.breadcrumbs.container-lg .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xl .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xxl .field--name-field-banner-subtitulo- {
     font-family: "Jersey";
     color: #ffefd5;
     position: absolute;
     top: 52vh;
     left: 20%;
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: bold; }
 
+#block-catoira-theme-page-title h1, #block-catoira-theme-page-title .h1 {
+  font-weight: bold; }
+
+footer.mt-auto {
+  margin-top: 60px !important; }
+
+@media only screen and (max-width: 576px) {
+  div.container-fluid.breadcrumbs .field--name-field-banner-titulo, div.breadcrumbs.container-sm .field--name-field-banner-titulo, div.breadcrumbs.container-md .field--name-field-banner-titulo, div.breadcrumbs.container-lg .field--name-field-banner-titulo, div.breadcrumbs.container-xl .field--name-field-banner-titulo, div.breadcrumbs.container-xxl .field--name-field-banner-titulo {
+    text-align: center;
+    font-size: 45px;
+    top: 25vh;
+    left: 5%; }
+  div.container-fluid.breadcrumbs .field--name-field-banner-subtitulo-, div.breadcrumbs.container-sm .field--name-field-banner-subtitulo-, div.breadcrumbs.container-md .field--name-field-banner-subtitulo-, div.breadcrumbs.container-lg .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xl .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xxl .field--name-field-banner-subtitulo- {
+    text-align: center;
+    top: 45vh;
+    left: 2%;
+    font-size: 20px; } }
 div.general-barcos {
   background-color: #afdbff;
-  padding-top: 15px;
   padding-bottom: 15px; }
   div.general-barcos div.barcos {
     border-radius: 5px;
     width: 55%;
     background-color: #d1eaff;
-    padding-bottom: 30px;
-    color: #3d5b74; }
+    color: #3d5b74;
+    padding: 120px;
+    padding-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px; }
     div.general-barcos div.barcos #block-catoira-theme-page-title {
       color: #4e82af;
       margin-top: 30px; }
@@ -10278,9 +10314,27 @@ div.general-barcos {
         margin-left: auto;
         margin-right: auto;
         display: block; }
-    div.general-barcos div.barcos .field--name-body, div.general-barcos div.barcos .field--name-field-url {
-      padding-left: 30px;
-      padding-right: 30px; }
+    div.general-barcos div.barcos .field--name-field-imagenes-secundarias {
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      div.general-barcos div.barcos .field--name-field-imagenes-secundarias .field__item {
+        margin-right: 15px; }
+    div.general-barcos div.barcos .field--name-field-url {
+      text-align: center;
+      margin: 30px; }
+      div.general-barcos div.barcos .field--name-field-url a {
+        text-decoration: none;
+        color: #d1eaff;
+        background-color: #4e82af;
+        padding: 15px; }
+    div.general-barcos div.barcos .field--name-field-fecha-del-evento {
+      text-align: end; }
+    div.general-barcos div.barcos .node__meta {
+      display: none; }
+    div.general-barcos div.barcos .field--name-field-tipo-de-barco,
+    div.general-barcos div.barcos .field--name-field-eslora {
+      text-align: end; }
 
 #block-serviciosqueofrecemos {
   margin-top: 120px;
@@ -10395,18 +10449,20 @@ footer {
     gap: 30px;
     display: grid; }
 
-.actualidad #block-catoira-theme-page-title {
+#block-catoira-theme-page-title {
   margin-top: 60px;
   margin-top: 60px;
   font-size: 45px;
   font-weight: bold; }
+
 .actualidad .row {
   grid-template-columns: auto auto auto;
   gap: 30px;
   display: grid;
   margin-bottom: 30px; }
 .actualidad .col {
-  width: auto !important;
+  width: 100% !important;
+  min-width: auto;
   min-height: 220px;
   max-height: auto;
   background-color: #d1eaff;
@@ -10429,5 +10485,34 @@ footer {
   border-top-color: #3d5b74;
   border-top-style: solid;
   border-top-width: 1px; }
+
+.pagina-barcos {
+  text-align: center;
+  --bs-gutter-x: 0;
+  margin: 0;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  display: grid;
+  margin: auto;
+  margin-bottom: 60px; }
+  .pagina-barcos .col {
+    width: 300px !important;
+    min-height: 220px;
+    max-height: auto;
+    background-color: #d1eaff;
+    padding: 15px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px; }
+  .pagina-barcos .col:hover {
+    background-color: white; }
+  .pagina-barcos a {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3d5b74; }
 
 /*# sourceMappingURL=style.css.map */
