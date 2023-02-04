@@ -2,7 +2,7 @@
     margin-top: $big-margin;
     margin-bottom: $big-margin;
     h2{
-        font-size: $titulo;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
         margin-bottom: $small-margin;
@@ -12,9 +12,10 @@
         grid-template-columns: auto auto auto auto;
         gap: $medium-margin;
         display: grid;
+        justify-content: center;
     }
-    .col-3{
-        width: auto !important;
+    .col{
+        width: 300px !important;
         min-height: 220px;
         max-height: auto;
         background-color: $color-background;
@@ -25,8 +26,15 @@
         padding-bottom: $medium-margin;
         border-radius: 5px;
     }
-    .col-3:hover{
+    .col:hover{
         background-color: white;
+    }
+    .views-field-field-imagen-principal img{
+        max-width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
+      }
     }
     .views-field-title{
         margin-top: $small-margin;
@@ -41,27 +49,24 @@
         border-top-style: solid;
         border-top-width: 1px;
     }
+@media only screen and (max-width: 1220px) {
+    #block-views-block-noticias-actualidad-block-1{
+        .row{
+            grid-template-columns: auto auto;
+        }
+    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 576px) {
     #block-views-block-noticias-actualidad-block-1{
         padding-left: $movil-medium-margin;
         padding-right: $movil-medium-margin;
-        h2{
-            font-size: $movil-titulo;
-        }
+        
         .row{
-            grid-template-columns: auto auto;
+            grid-template-columns: auto;
             gap: $movil-medium-margin;
 
         }
-        .views-field-title{
-            font-size: $movil-titulo2;
-            font-weight: normal;
-        }
-        .views-field-body{
-            border-top-width: 0px;
-            display: none;
-        }
+        
     }
 }

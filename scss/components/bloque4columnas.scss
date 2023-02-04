@@ -26,5 +26,11 @@
     }
 
     .row .col + .col { border-left:0.5px solid $color-background; }
+    @include max-sm{
+        div[class*="field--name-field-titulo-"]{
+            margin-top: 25px;
+        }
+        .row .col + .col { border-left:0; }
+    }
 
 }

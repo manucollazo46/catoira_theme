@@ -12,6 +12,10 @@
         .row{
             gap: $big-margin;
             display: grid;
+            
+        }
+        .field--type-image{
+            margin-top: 15px;
         }
         .col:hover{
             img{

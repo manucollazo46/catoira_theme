@@ -8,10 +8,10 @@
         margin-bottom: $small-margin;
     }
     .row{
-        
-        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        //grid-template-columns: auto auto auto auto;
         gap: $medium-margin;
-        display: grid;
+        //display: grid;
         margin: auto;
           
     }
@@ -46,6 +46,12 @@
         border-top-color: $color-secondary;
         border-top-style: solid;
         border-top-width: 1px;
+    }
+    .views-field-field-imagen-principal img{
+        max-width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: center;
     }
    
 }

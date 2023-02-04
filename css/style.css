@@ -10195,16 +10195,17 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
   margin-top: 60px;
   margin-bottom: 60px; }
   #block-views-block-noticias-actualidad-block-1 h2, #block-views-block-noticias-actualidad-block-1 .h2 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px; }
   #block-views-block-noticias-actualidad-block-1 .row {
     grid-template-columns: auto auto auto auto;
     gap: 30px;
-    display: grid; }
-  #block-views-block-noticias-actualidad-block-1 .col-3 {
-    width: auto !important;
+    display: grid;
+    justify-content: center; }
+  #block-views-block-noticias-actualidad-block-1 .col {
+    width: 300px !important;
     min-height: 220px;
     max-height: auto;
     background-color: #d1eaff;
@@ -10214,35 +10215,41 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 5px; }
-  #block-views-block-noticias-actualidad-block-1 .col-3:hover {
+  #block-views-block-noticias-actualidad-block-1 .col:hover {
     background-color: white; }
-  #block-views-block-noticias-actualidad-block-1 .views-field-title {
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: bold; }
-  #block-views-block-noticias-actualidad-block-1 .views-field-body {
-    margin: 15px;
-    padding-top: 5px;
-    margin-top: 5px;
-    border-top-color: #3d5b74;
-    border-top-style: solid;
-    border-top-width: 1px; }
+  #block-views-block-noticias-actualidad-block-1 .views-field-field-imagen-principal img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center; }
 
-@media only screen and (max-width: 900px) {
+.views-field-title {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold; }
+
+.views-field-body {
+  margin: 15px;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top-color: #3d5b74;
+  border-top-style: solid;
+  border-top-width: 1px; }
+
+@media only screen and (max-width: 1220px) {
+  #block-views-block-noticias-actualidad-block-1 .row {
+    grid-template-columns: auto auto; } }
+@media only screen and (max-width: 576px) {
   #block-views-block-noticias-actualidad-block-1 {
     padding-left: 15px;
     padding-right: 15px; }
-    #block-views-block-noticias-actualidad-block-1 h2, #block-views-block-noticias-actualidad-block-1 .h2 {
-      font-size: 22px; }
     #block-views-block-noticias-actualidad-block-1 .row {
-      grid-template-columns: auto auto;
-      gap: 15px; }
-    #block-views-block-noticias-actualidad-block-1 .views-field-title {
-      font-size: 17px;
-      font-weight: normal; }
-    #block-views-block-noticias-actualidad-block-1 .views-field-body {
-      border-top-width: 0px;
-      display: none; } }
+      grid-template-columns: auto;
+      gap: 15px; } }
+@media only screen and (max-width: 576px) {
+  .nav-item {
+    text-align: center; } }
+
 div.container-fluid.breadcrumbs, div.breadcrumbs.container-sm, div.breadcrumbs.container-md, div.breadcrumbs.container-lg, div.breadcrumbs.container-xl, div.breadcrumbs.container-xxl {
   --bs-gutter-x: 0rem; }
   div.container-fluid.breadcrumbs .field--name-field-imagen-banner, div.breadcrumbs.container-sm .field--name-field-imagen-banner, div.breadcrumbs.container-md .field--name-field-imagen-banner, div.breadcrumbs.container-lg .field--name-field-imagen-banner, div.breadcrumbs.container-xl .field--name-field-imagen-banner, div.breadcrumbs.container-xxl .field--name-field-imagen-banner {
@@ -10254,18 +10261,26 @@ div.container-fluid.breadcrumbs, div.breadcrumbs.container-sm, div.breadcrumbs.c
       filter: brightness(0.6); }
   div.container-fluid.breadcrumbs .field--name-field-banner-titulo, div.breadcrumbs.container-sm .field--name-field-banner-titulo, div.breadcrumbs.container-md .field--name-field-banner-titulo, div.breadcrumbs.container-lg .field--name-field-banner-titulo, div.breadcrumbs.container-xl .field--name-field-banner-titulo, div.breadcrumbs.container-xxl .field--name-field-banner-titulo {
     color: #ffefd5;
+    font-size: 90px;
     position: absolute;
     font-family: "Jersey";
     top: 35vh;
-    left: 20%;
-    font-size: 90px;
+    left: 10%;
+    right: 10%;
     font-weight: bold; }
+    @media (max-width: 991.98px) {
+      div.container-fluid.breadcrumbs .field--name-field-banner-titulo, div.breadcrumbs.container-sm .field--name-field-banner-titulo, div.breadcrumbs.container-md .field--name-field-banner-titulo, div.breadcrumbs.container-lg .field--name-field-banner-titulo, div.breadcrumbs.container-xl .field--name-field-banner-titulo, div.breadcrumbs.container-xxl .field--name-field-banner-titulo {
+        font-size: 65px; } }
+    @media (max-width: 767.98px) {
+      div.container-fluid.breadcrumbs .field--name-field-banner-titulo, div.breadcrumbs.container-sm .field--name-field-banner-titulo, div.breadcrumbs.container-md .field--name-field-banner-titulo, div.breadcrumbs.container-lg .field--name-field-banner-titulo, div.breadcrumbs.container-xl .field--name-field-banner-titulo, div.breadcrumbs.container-xxl .field--name-field-banner-titulo {
+        font-size: 40px; } }
   div.container-fluid.breadcrumbs .field--name-field-banner-subtitulo-, div.breadcrumbs.container-sm .field--name-field-banner-subtitulo-, div.breadcrumbs.container-md .field--name-field-banner-subtitulo-, div.breadcrumbs.container-lg .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xl .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xxl .field--name-field-banner-subtitulo- {
     font-family: "Jersey";
     color: #ffefd5;
     position: absolute;
     top: 52vh;
-    left: 20%;
+    left: 10%;
+    right: 20%;
     font-size: 40px;
     font-weight: bold; }
 
@@ -10275,16 +10290,18 @@ div.container-fluid.breadcrumbs, div.breadcrumbs.container-sm, div.breadcrumbs.c
 footer.mt-auto {
   margin-top: 60px !important; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 900px) {
   div.container-fluid.breadcrumbs .field--name-field-banner-titulo, div.breadcrumbs.container-sm .field--name-field-banner-titulo, div.breadcrumbs.container-md .field--name-field-banner-titulo, div.breadcrumbs.container-lg .field--name-field-banner-titulo, div.breadcrumbs.container-xl .field--name-field-banner-titulo, div.breadcrumbs.container-xxl .field--name-field-banner-titulo {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     top: 25vh;
-    left: 5%; }
+    left: 5%;
+    right: 5%; }
   div.container-fluid.breadcrumbs .field--name-field-banner-subtitulo-, div.breadcrumbs.container-sm .field--name-field-banner-subtitulo-, div.breadcrumbs.container-md .field--name-field-banner-subtitulo-, div.breadcrumbs.container-lg .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xl .field--name-field-banner-subtitulo-, div.breadcrumbs.container-xxl .field--name-field-banner-subtitulo- {
     text-align: center;
     top: 45vh;
     left: 2%;
+    right: 2%;
     font-size: 20px; } }
 div.general-barcos {
   background-color: #afdbff;
@@ -10302,7 +10319,7 @@ div.general-barcos {
       color: #4e82af;
       margin-top: 30px; }
       div.general-barcos div.barcos #block-catoira-theme-page-title span {
-        font-size: 45px; }
+        font-size: 40px; }
     div.general-barcos div.barcos .field--name-field-subtitulo {
       font-size: 25px;
       text-align: center;
@@ -10328,6 +10345,13 @@ div.general-barcos {
         color: #d1eaff;
         background-color: #4e82af;
         padding: 15px; }
+        @media (max-width: 767.98px) {
+          div.general-barcos div.barcos .field--name-field-url a {
+            padding: 5px; } }
+      @media (max-width: 767.98px) {
+        div.general-barcos div.barcos .field--name-field-url {
+          margin: 0;
+          margin-bottom: 15px; } }
     div.general-barcos div.barcos .field--name-field-fecha-del-evento {
       text-align: end; }
     div.general-barcos div.barcos .node__meta {
@@ -10335,6 +10359,56 @@ div.general-barcos {
     div.general-barcos div.barcos .field--name-field-tipo-de-barco,
     div.general-barcos div.barcos .field--name-field-eslora {
       text-align: end; }
+    @media (max-width: 767.98px) {
+      div.general-barcos div.barcos {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        padding: 30px; }
+        div.general-barcos div.barcos .field--name-field-imagenes-secundarias {
+          display: none; } }
+
+.pagina-barcos {
+  text-align: center;
+  --bs-gutter-x: 0;
+  margin: 0;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 30px;
+  display: grid;
+  margin: auto;
+  margin-bottom: 60px; }
+  @media (max-width: 1199.98px) {
+    .pagina-barcos {
+      grid-template-columns: auto auto auto; } }
+  @media (max-width: 991.98px) {
+    .pagina-barcos {
+      grid-template-columns: auto auto; } }
+  @media (max-width: 767.98px) {
+    .pagina-barcos {
+      grid-template-columns: auto; } }
+  .pagina-barcos .col {
+    width: 300px !important;
+    min-height: 220px;
+    max-height: auto;
+    background-color: #d1eaff;
+    padding: 15px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px; }
+    .pagina-barcos .col img {
+      aspect-ratio: 1/1;
+      object-fit: cover; }
+  .pagina-barcos .col:hover {
+    background-color: white; }
+  .pagina-barcos a {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3d5b74; }
 
 #block-serviciosqueofrecemos {
   margin-top: 120px;
@@ -10342,11 +10416,13 @@ div.general-barcos {
   text-align: center; }
   #block-serviciosqueofrecemos h2, #block-serviciosqueofrecemos .h2 {
     margin-top: 15px;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold; }
   #block-serviciosqueofrecemos .servicios .row {
     gap: 60px;
     display: grid; }
+  #block-serviciosqueofrecemos .servicios .field--type-image {
+    margin-top: 15px; }
   #block-serviciosqueofrecemos .servicios .col:hover img {
     filter: grayscale(0); }
   #block-serviciosqueofrecemos .servicios .field--name-field-servicio1,
@@ -10364,14 +10440,13 @@ div.general-barcos {
   margin-top: 60px;
   margin-bottom: 60px; }
   #block-views-block-barcos-barcos-en-los-que-trabajamos h2, #block-views-block-barcos-barcos-en-los-que-trabajamos .h2 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px; }
   #block-views-block-barcos-barcos-en-los-que-trabajamos .row {
-    grid-template-columns: auto auto auto auto;
+    justify-content: center;
     gap: 30px;
-    display: grid;
     margin: auto; }
   #block-views-block-barcos-barcos-en-los-que-trabajamos .col {
     width: 300px !important;
@@ -10400,6 +10475,11 @@ div.general-barcos {
     border-top-color: #3d5b74;
     border-top-style: solid;
     border-top-width: 1px; }
+  #block-views-block-barcos-barcos-en-los-que-trabajamos .views-field-field-imagen-principal img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center; }
 
 #block-bloque4columnas {
   background-color: #4e82af;
@@ -10424,6 +10504,11 @@ div.general-barcos {
     color: #d1eaff; }
   #block-bloque4columnas .row .col + .col {
     border-left: 0.5px solid #d1eaff; }
+  @media (max-width: 767.98px) {
+    #block-bloque4columnas div[class*="field--name-field-titulo-"] {
+      margin-top: 25px; }
+    #block-bloque4columnas .row .col + .col {
+      border-left: 0; } }
 
 footer {
   padding-top: 60px;
@@ -10438,21 +10523,23 @@ footer {
     border-radius: 15px; }
   #block-ubicacionastilleros .field--name-body {
     padding-top: 60px; }
+  @media (max-width: 767.98px) {
+    #block-ubicacionastilleros {
+      text-align: center; } }
 
 footer {
   text-align: center;
   font-size: 25px; }
   footer .post-footer {
     margin-bottom: 30px;
-    margin-top: 30px;
-    grid-template-columns: auto auto auto;
-    gap: 30px;
-    display: grid; }
+    margin-top: 30px; }
+    footer .post-footer .col-12 {
+      padding-bottom: 1rem; }
 
 #block-catoira-theme-page-title {
   margin-top: 60px;
   margin-top: 60px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold; }
 
 .actualidad .row {
@@ -10460,6 +10547,12 @@ footer {
   gap: 30px;
   display: grid;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 1500px) {
+    .actualidad .row {
+      grid-template-columns: auto auto; } }
+  @media only screen and (max-width: 500px) {
+    .actualidad .row {
+      grid-template-columns: auto; } }
 .actualidad .col {
   width: 100% !important;
   min-width: auto;
@@ -10485,34 +10578,9 @@ footer {
   border-top-color: #3d5b74;
   border-top-style: solid;
   border-top-width: 1px; }
-
-.pagina-barcos {
-  text-align: center;
-  --bs-gutter-x: 0;
-  margin: 0;
-  grid-template-columns: auto auto auto auto;
-  gap: 30px;
-  display: grid;
-  margin: auto;
-  margin-bottom: 60px; }
-  .pagina-barcos .col {
-    width: 300px !important;
-    min-height: 220px;
-    max-height: auto;
-    background-color: #d1eaff;
-    padding: 15px;
-    text-align: center;
-    padding: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 5px; }
-  .pagina-barcos .col:hover {
-    background-color: white; }
-  .pagina-barcos a {
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #3d5b74; }
+.actualidad .views-field-field-imagen-principal img {
+  aspect-ratio: 1/1;
+  object-position: center;
+  object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

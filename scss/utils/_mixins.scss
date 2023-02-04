@@ -1,0 +1,77 @@
+@mixin max-extra-xs{
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  
+  @mixin max-xs {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+  
+  @mixin min-xs{
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin max-sm{
+    @media (max-width: 767.98px) {
+      @content;
+    }
+  }
+  
+  @mixin min-sm{
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin max-md {
+    @media (max-width: 991.98px) {
+      @content;
+    }
+  }
+  
+  @mixin min-md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  @mixin max-lg {
+    @media (max-width: 1199.98px) {
+      @content;
+    }
+  }
+  
+  @mixin min-lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @mixin max-xl {
+    @media (max-width: 1399.98px) {
+      @content;
+    }
+  }
+  
+  @mixin min-xl {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+  
+
+@mixin set-basic-styles-text ($color,$font-size,$font-size-tablet,$font-size-mobile) {
+    color: $color;
+    font-size: $font-size;
+    @include max-md{
+        font-size: $font-size-tablet;
+    }
+    @include max-sm{
+        font-size: $font-size-mobile;
+    }
+}

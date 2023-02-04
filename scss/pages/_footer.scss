@@ -3,9 +3,12 @@ footer{
     .post-footer{
         margin-bottom: $medium-margin;
         margin-top: $medium-margin;
-        grid-template-columns: auto auto auto;
-        gap: $medium-margin;
-        display: grid;
+        //grid-template-columns: auto auto auto;
+        //gap: $medium-margin;
+        //display: grid;
+        .col-12{
+            padding-bottom: 1rem;
+        }
     }
     font-size: $subtitulo;
 }

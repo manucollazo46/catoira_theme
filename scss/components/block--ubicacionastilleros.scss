@@ -16,4 +16,7 @@ footer{
     }
 
     margin-bottom: $big-margin;
+    @include max-sm{
+        text-align: center;
+    }
 }

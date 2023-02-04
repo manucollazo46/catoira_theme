@@ -54,6 +54,14 @@ div.general-barcos{
                 color: $color-background;
                 background-color: $color-primary;
                 padding: $small-margin;
+                @include max-sm{
+                    padding: 5px;
+                }
+            }
+            @include max-sm{
+                margin: 0;
+                margin-bottom: 15px;
+
             }
         }
 
@@ -70,5 +78,63 @@ div.general-barcos{
             text-align: end;
         }
 
+        @include max-sm{
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 100%;
+            padding: 30px;
+            .field--name-field-imagenes-secundarias{
+                display: none;
+            }
+        }
+
     }
+}
+
+.pagina-barcos{
+    text-align: center;
+    --bs-gutter-x: 0;
+    margin: 0;
+    grid-template-columns: auto auto auto auto;
+    @include max-lg{
+        grid-template-columns: auto auto auto;
+    }
+    @include max-md{
+        grid-template-columns: auto auto;
+    }
+    @include max-sm{
+        grid-template-columns: auto;
+    }
+    justify-content: center;
+    gap: $medium-margin;
+    display: grid;
+    margin: auto;
+    margin-bottom: $big-margin;
+    .col{
+        width: 300px !important;
+        min-height: 220px;
+        max-height: auto;
+        background-color: $color-background;
+        padding: $small-margin;
+        text-align: center;
+        padding: $small-margin;
+        padding-top: $medium-margin;
+        padding-bottom: $medium-margin;
+        border-radius: 5px;
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+    .col:hover{
+        background-color: white;
+    }
+    a{
+        margin-top: $medium-margin;
+        font-size: $subtitulo;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-secondary;
+   }
+    
 }

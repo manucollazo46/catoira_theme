@@ -1,3 +1,9 @@
+.nav-item{
+    @media only screen and (max-width: 576px) {
+        text-align: center;
+    }
+}
+
 div.container-fluid.breadcrumbs{
     --bs-gutter-x: 0rem;
     .field--name-field-imagen-banner{
@@ -10,12 +16,12 @@ div.container-fluid.breadcrumbs{
         }
     }
     .field--name-field-banner-titulo{
-        color: $color-crema;
+        @include set-basic-styles-text($color-crema,$titulo-banner,$titulo-banner-tablet,$titulo-banner-mobile);
         position: absolute;
         font-family: $jersey;
         top: 35vh;
-        left: 20%;
-        font-size: $titulo-banner;
+        left: 10%;
+        right: 10%;
         font-weight: bold;
     }
     .field--name-field-banner-subtitulo-{
@@ -23,7 +29,8 @@ div.container-fluid.breadcrumbs{
         color: $color-crema;
         position: absolute;
         top: 52vh;
-        left: 20%;
+        left: 10%;
+        right: 20%;
         font-size: $subtitulo-banner;
         font-weight: bold;
 
@@ -39,19 +46,21 @@ footer.mt-auto{
     margin-top: $big-margin !important;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 900px) {
     div.container-fluid.breadcrumbs{
 
         .field--name-field-banner-titulo{
             text-align: center;
-            font-size: $movil-titulo-banner;
+            font-size: $titulo-banner-mobile;
             top: 25vh;
             left: 5%;
+            right: 5%;
         }
         .field--name-field-banner-subtitulo-{
             text-align: center;
             top: 45vh;
             left: 2%;
+            right: 2%;
             font-size: $movil-subtitulo-banner;
         }
     }
