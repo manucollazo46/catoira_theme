@@ -26,3 +26,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark{
 .bg-secondary{
     background-color: $color-secondary !important;
 }
+
+.node--type-page .field--name-body img{
+    width: 100%;
+    height: auto;
+}

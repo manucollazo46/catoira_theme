@@ -10191,6 +10191,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.text-light.bg-dark {
 .bg-secondary {
   background-color: #3d5b74 !important; }
 
+.node--type-page .field--name-body img {
+  width: 100%;
+  height: auto; }
+
 #block-views-block-noticias-actualidad-block-1 {
   margin-top: 60px;
   margin-bottom: 60px; }
